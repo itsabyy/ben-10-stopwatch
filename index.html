@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben 10 Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #101820; color: #FFFFFF; font-family: 'Roboto', sans-serif;">
+    <h1 id="myH1" style="margin-top: 50px; font-size: 3rem; text-align: center; font-family: 'Press Start 2P', cursive; color: #FFD700;">Omnitrix Stopwatch</h1>
+    <div id="container" style="background-color: #1A2930; border-radius: 20px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); padding: 30px; text-align: center;">
+        <div id="display" style="font-size: 3rem; font-weight: bold; color: #00FF00; text-shadow: 2px 2px 5px rgba(0, 255, 0, 0.5); padding: 20px; border: 2px solid #FFD700; border-radius: 10px; background-color: rgba(0, 0, 0, 0.5);">
+            00:00:00:00
+        </div>
+        <div id="controls" style="margin-top: 20px;">
+            <button id="startBtn" onclick="start()" style="background-color: #FFA500; color: #FFFFFF; border: none; padding: 15px 30px; font-size: 1.5rem; font-weight: bold; border-radius: 10px; cursor: pointer; margin: 5px;">Start</button>
+            <button id="stopBtn" onclick="stop()" style="background-color: #FF6347; color: #FFFFFF; border: none; padding: 15px 30px; font-size: 1.5rem; font-weight: bold; border-radius: 10px; cursor: pointer; margin: 5px;">Stop</button>
+            <button id="resetBtn" onclick="reset()" style="background-color: #1E90FF; color: #FFFFFF; border: none; padding: 15px 30px; font-size: 1.5rem; font-weight: bold; border-radius: 10px; cursor: pointer; margin: 5px;">Reset</button>
+            <button id="lapBtn" onclick="lap()" style="background-color: #FFD700; color: #000000; border: none; padding: 15px 30px; font-size: 1.5rem; font-weight: bold; border-radius: 10px; cursor: pointer; margin: 5px;">Lap</button>
+            <button id="resetLapBtn" onclick="resetLap()" style="background-color: #FF4500; color: #FFFFFF; border: none; padding: 15px 30px; font-size: 1.5rem; font-weight: bold; border-radius: 10px; cursor: pointer; margin: 5px;">Reset Laps</button>
+            <button id="restartBtn" onclick="restart()" style="background-color: #32CD32; color: #FFFFFF; border: none; padding: 15px 30px; font-size: 1.5rem; font-weight: bold; border-radius: 10px; cursor: pointer; margin: 5px;">Restart</button>
+        </div>
+    </div>
+    <ul id="laps" style="list-style: none; padding: 20px; text-align: center; margin-top: 30px; font-size: 1.2rem;">
+    </ul>
+    <footer style="text-align: center; margin-top: 50px; color: #CCCCCC;">
+        Developed by Abishek vs
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

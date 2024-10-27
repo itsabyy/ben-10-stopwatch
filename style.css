@@ -1,0 +1,95 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #000; /* Black background */
+}
+:root {
+  --primary-color: #2ecc71; /* Green primary color */
+  --secondary-color: #fff; /* White secondary color */
+  --text-color: #000; /* Black text color */
+}
+#myH1 {
+  margin-top: 100px;
+  font-size: 4rem;
+  font-family: 'Press Start 2P', cursive;
+  color: var(--secondary-color);
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-radius: 50px;
+  background-color: var(--secondary-color);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Adjusted shadow */
+}
+#display {
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: 'Cinzel', serif;
+  color: var(--text-color);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Soft black shadow */
+  margin-bottom: 25px;
+}
+#laps {
+  list-style: none;
+  padding: 0;
+}
+#laps li {
+  background-color: var(--secondary-color);
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+#controls button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 5px;
+  min-width: 125px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: var(--secondary-color);
+  transition: background-color 0.5s ease;
+}
+#startBtn {
+  background-color: #16a085; /* Green */
+}
+#startBtn:hover {
+  background-color: #1abc9c; /* Lighter green */
+}
+#stopBtn {
+  background-color: #34495e; /* Dark gray */
+}
+#stopBtn:hover {
+  background-color: #2c3e50; /* Darker gray */
+}
+#resetBtn {
+  background-color: #f39c12; /* Orange */
+}
+#resetBtn:hover {
+  background-color: #e67e22; /* Lighter orange */
+}
+#lapBtn {
+  background-color: #2980b9; /* Blue */
+}
+#lapBtn:hover {
+  background-color: #3498db; /* Lighter blue */
+}
+#resetLapBtn {
+  background-color: #c0392b; /* Red */
+}
+#resetLapBtn:hover {
+  background-color: #e74c3c; /* Lighter red */
+}
+#restartBtn {
+  background-color: #2ecc71; /* Green */
+}
+#restartBtn:hover {
+  background-color: #27ae60; /* Lighter green */
+}
